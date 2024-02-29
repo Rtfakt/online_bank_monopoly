@@ -7,21 +7,24 @@ import 'package:online_bank_monopoly/name_screen.dart';
 import 'package:online_bank_monopoly/role_screen.dart';
 
 final routing = GoRouter(
-  initialLocation: '/role_screen',
+  initialLocation: '/name_screen',
   routes: [
     GoRoute(
-      path: '/',
-      builder: (BuildContext context, GoRouterState state) => const NameScreen(),
+      path: '/name_screen',
+      builder: (BuildContext context, GoRouterState state) =>
+          const NameScreen(),
     ),
     GoRoute(
       path: '/role_screen',
-      builder: (BuildContext context, GoRouterState state) => const RoleScreen(),
+      builder: (BuildContext context, GoRouterState state) =>
+          const RoleScreen(),
     ),
     GoRoute(
       path: '/bank',
-      builder: (BuildContext context, GoRouterState state) => const BankScreen(),
+      builder: (BuildContext context, GoRouterState state) =>
+          const BankScreen(),
     ),
-        GoRoute(
+            GoRoute(
       path: '/bank_and_user',
       builder: (BuildContext context, GoRouterState state) => const BankAndUserScreen(),
     ),
@@ -34,30 +37,3 @@ final routing = GoRouter(
 
 
 
-/*
-final routing = GoRouter(
-  initialLocation: '/role_screen',
-  routes: [
-    GoRoute(
-      path: '/',
-      builder: (BuildContext context, GoRouterState state) => const NameScreen(),
-    ),
-    GoRoute(
-      path: '/role_screen',
-      builder: (BuildContext context, GoRouterState state) => const RoleScreen(),
-    ),
-    GoRoute(
-      path: '/bank',
-      builder: (BuildContext context, GoRouterState state) => const BankScreen(),
-    ),
-        GoRoute(
-      path: '/bank_and_user',
-      builder: (BuildContext context, GoRouterState state) => const BankAndUserScreen(),
-    ),
-        GoRoute(
-      path: '/user',
-      builder: (BuildContext context, GoRouterState state) => const UserScreen(),
-    ),
-  ],
-);
-*/

@@ -25,7 +25,7 @@ class _InitialScreenState extends State<RoleScreen> {
           children: [
             ElevatedButton(
               onPressed: () {
-                context.go('/bank');
+                context.push('/bank');
               },
               style: ElevatedButton.styleFrom(
                 shadowColor: Colors.transparent,
@@ -34,8 +34,7 @@ class _InitialScreenState extends State<RoleScreen> {
             ),
             ElevatedButton(
               onPressed: () {
-                UserRepository().createNewRoom();
-                //context.go('/bank_and_user');
+                context.push('/bank_and_user');
               },
               style: ElevatedButton.styleFrom(
                 shadowColor: Colors.transparent,
@@ -44,8 +43,7 @@ class _InitialScreenState extends State<RoleScreen> {
             ),
             ElevatedButton(
               onPressed: () {
-                UserRepository().getData();
-                //context.go('/user');
+                context.push('/user');
               },
               style: ElevatedButton.styleFrom(
                 shadowColor: Colors.transparent,
