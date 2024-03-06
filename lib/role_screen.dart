@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:online_bank_monopoly/repositories/user_repository.dart';
 
 class RoleScreen extends StatefulWidget {
   const RoleScreen({super.key});
