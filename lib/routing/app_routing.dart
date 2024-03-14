@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:online_bank_monopoly/features/bank/ui/bank_screen.dart';
 import 'package:online_bank_monopoly/features/bank_and_user/ui/bank_and_user_screen.dart';
+import 'package:online_bank_monopoly/features/pay_details/pay_details_screen.dart';
 import 'package:online_bank_monopoly/features/user/ui/user.dart';
 import 'package:online_bank_monopoly/name_screen.dart';
 import 'package:online_bank_monopoly/role_screen.dart';
@@ -31,6 +32,10 @@ final routing = GoRouter(
         GoRoute(
       path: '/user',
       builder: (BuildContext context, GoRouterState state) => const UserScreen(),
+    ),
+            GoRoute(
+      path: '/pay_details',
+      builder: (BuildContext context, GoRouterState state) => const PayDetails(),
     ),
   ],
 );

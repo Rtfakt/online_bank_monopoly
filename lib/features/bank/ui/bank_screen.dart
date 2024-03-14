@@ -6,10 +6,9 @@ class BankScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Банк'),
-        leading: const BackButton(
-          color: Colors.black,
+        title: const Text('Банк',
         ),
       ),
     );
