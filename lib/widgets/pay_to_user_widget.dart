@@ -5,17 +5,18 @@ class PayToUserWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.grey,
-      child: Column(
+    return  Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('перевести деньги игроку'),
+          const Text('перевести деньги игроку'),
+          Container(
+      color: Colors.grey,
+      child:
           GridView.builder(
                       itemCount: 8 ,
                       shrinkWrap: true,
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 4,
                           ),
                       itemBuilder: ((context, index) {
@@ -23,11 +24,11 @@ class PayToUserWidget extends StatelessWidget {
                           padding: const EdgeInsets.all(8.0),
                           child: ElevatedButton(
                             onPressed: () {},
-                            child: Text('Имя'),),
+                            child: const Text('Имя'),),
                           );
                       }),
                     ),
-    ],),);
+    )]);
   }
 }
 

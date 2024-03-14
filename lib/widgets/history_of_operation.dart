@@ -5,18 +5,25 @@ class HistoryOfOperation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 354,
-      color: Colors.brown,
-      child: Column(
-        children: [
-          Text('Андрей перевел деньги в банк'),
-          Text('Алексей перевел деньги Вове'),
-          Text('Антон перевел деньги в банк'),
-          Text('Банк перевел деньги Вове'),
-
-        ],
-      ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text('История операций'),
+        Container(
+          width: 354,
+          height: 280,
+          color: Colors.grey,
+          child: const Column(
+            children: [
+              Text('Андрей перевел деньги в банк'),
+              Text('Алексей перевел деньги Вове'),
+              Text('Антон перевел деньги в банк'),
+              Text('Банк перевел деньги Вове'),
+        
+            ],
+          ),
+        ),
+      ],
     );
   }
 }

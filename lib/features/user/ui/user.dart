@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:online_bank_monopoly/widgets/history_of_operation.dart';
 import 'package:online_bank_monopoly/widgets/pay_to_bank_widget.dart';
 import 'package:online_bank_monopoly/widgets/pay_to_user_widget.dart';
+import 'package:online_bank_monopoly/widgets/your_balance.dart';
+
 class UserScreen extends StatefulWidget {
   const UserScreen({super.key});
 
@@ -16,18 +18,22 @@ class _UserScreenState extends State<UserScreen> {
       appBar: AppBar(
         title: const Text('Игрок'),
       ),
-      body: SafeArea(
+      body: const SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(20),
+          padding: EdgeInsets.all(20),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-
-              PayToBankWidget(),
-              Padding(padding: EdgeInsets.only(top: 10),),
-              PayToUserWidget(),
-              Padding(padding: EdgeInsets.only(top: 10),),
+              YourBalance(),
               HistoryOfOperation(),
+              PayToBankWidget(),
+              Padding(
+                padding: EdgeInsets.only(top: 10),
+              ),
+              PayToUserWidget(),
+              Padding(
+                padding: EdgeInsets.only(top: 10),
+              ),
             ],
           ),
         ),

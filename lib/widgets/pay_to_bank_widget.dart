@@ -6,38 +6,46 @@ class PayToBankWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.amber,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text('перевести деньги в банк'),
-          Padding(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text('перевести деньги в банк'),
+        Container(
+          color: Colors.grey,
+          child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+            child: Column(
               children: [
-                ElevatedButton(
-                  onPressed: () => context.push('/pay_details'),
-                  child: Text('оплатить штраф'),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () => context.push('/pay_details'),
+                      child: const Text('оплатить штраф'),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text('купить компанию'),
+                    ),
+                  ],
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text('купить предприятие'),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text('купить недвижимость'),
-                ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text('другое'),
+                Row(
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text('купить недвижимость'),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text('другое'),
+                    ),
+                  ],
                 ),
               ],
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
