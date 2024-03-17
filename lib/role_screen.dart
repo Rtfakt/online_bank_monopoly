@@ -24,7 +24,7 @@ class _InitialScreenState extends State<RoleScreen> {
           children: [
             ElevatedButton(
               onPressed: () {
-                context.push('/bank');
+                context.push('/create_room');
               },
               style: ElevatedButton.styleFrom(
                 shadowColor: Colors.transparent,
@@ -42,7 +42,7 @@ class _InitialScreenState extends State<RoleScreen> {
             ),
             ElevatedButton(
               onPressed: () {
-                context.push('/user');
+                context.push('/connect_to_room');
               },
               style: ElevatedButton.styleFrom(
                 shadowColor: Colors.transparent,

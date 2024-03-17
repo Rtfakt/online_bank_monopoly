@@ -11,7 +11,7 @@ class HistoryOfOperation extends StatelessWidget {
         Text('История операций'),
         Container(
           width: 354,
-          height: 280,
+          height: 230,
           color: Colors.grey,
           child: const Column(
             children: [

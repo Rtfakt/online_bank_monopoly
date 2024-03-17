@@ -7,10 +7,14 @@ class YourBalance extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Center(
       child: Card(
+        color: Colors.grey,
         shadowColor: Colors.transparent,
-        child: Text(
-          'Ваш баланс: 25000',
-          style: TextStyle(fontSize: 30),
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50),
+          child: Text(
+            'Ваш баланс: 25000',
+            style: TextStyle(fontSize: 30),
+          ),
         ),
       ),
     );

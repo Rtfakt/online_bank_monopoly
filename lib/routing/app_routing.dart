@@ -3,6 +3,8 @@ import 'package:go_router/go_router.dart';
 import 'package:online_bank_monopoly/features/bank/ui/bank_screen.dart';
 import 'package:online_bank_monopoly/features/bank_and_user/ui/bank_and_user_screen.dart';
 import 'package:online_bank_monopoly/features/pay_details/pay_details_screen.dart';
+import 'package:online_bank_monopoly/features/rooms/connect_to_rooms_screen.dart.dart';
+import 'package:online_bank_monopoly/features/rooms/create_room_screen.dart';
 import 'package:online_bank_monopoly/features/user/ui/user.dart';
 import 'package:online_bank_monopoly/name_screen.dart';
 import 'package:online_bank_monopoly/role_screen.dart';
@@ -25,20 +27,30 @@ final routing = GoRouter(
       builder: (BuildContext context, GoRouterState state) =>
           const BankScreen(),
     ),
-            GoRoute(
+    GoRoute(
       path: '/bank_and_user',
-      builder: (BuildContext context, GoRouterState state) => const BankAndUserScreen(),
+      builder: (BuildContext context, GoRouterState state) =>
+          const BankAndUserScreen(),
     ),
-        GoRoute(
+    GoRoute(
       path: '/user',
-      builder: (BuildContext context, GoRouterState state) => const UserScreen(),
+      builder: (BuildContext context, GoRouterState state) =>
+          const UserScreen(),
     ),
-            GoRoute(
+    GoRoute(
       path: '/pay_details',
-      builder: (BuildContext context, GoRouterState state) => const PayDetails(),
+      builder: (BuildContext context, GoRouterState state) =>
+          const PayDetails(),
+    ),
+    GoRoute(
+      path: '/connect_to_room',
+      builder: (BuildContext context, GoRouterState state) =>
+          const ConnectToRoomScreen(),
+    ),
+    GoRoute(
+      path: '/create_room',
+      builder: (BuildContext context, GoRouterState state) =>
+          const CreateRoomScreen(),
     ),
   ],
 );
-
-
-

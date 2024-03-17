@@ -10,57 +10,65 @@ class PayDetails extends StatelessWidget {
       appBar: AppBar(
         title: const Text('оплатить'),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          YourBalance(),
-          Text('Кому:'),
-          Card(
-            child: Text('В банк'),
-          ),
-          TextField(
-            decoration: InputDecoration(
-              enabledBorder: const OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.white),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.grey),
-              ),
-              fillColor: Colors.grey,
-              filled: true,
-              hintStyle: TextStyle(
-                color: Colors.grey,
+      body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            YourBalance(),
+            Text('Кому:'),
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 155.0, vertical: 50.0),
+                child: Text('В банк'),
               ),
             ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              ElevatedButton(
-                onPressed: () {},
-                child: Text('+100'),
+            Padding(padding: EdgeInsets.symmetric(vertical: 70),),
+            TextField(
+              decoration: InputDecoration(
+                enabledBorder: const OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.white),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.grey),
+                ),
+                fillColor: Colors.grey,
+                filled: true,
+                hintStyle: TextStyle(
+                  color: Colors.grey,
+                ),
               ),
-              ElevatedButton(
-                onPressed: () {},
-                child: Text('+500'),
-              ),
-              ElevatedButton(
-                onPressed: () {},
-                child: Text('+1000'),
-              ),
-              ElevatedButton(
-                onPressed: () {},
-                child: Text('+5000'),
-              ),
-            ],
-          ),
-          Center(
-            child: ElevatedButton(
-              onPressed: () {},
-              child: Text('Оплатить'),
             ),
-          ),
-        ],
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('+100'),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('+500'),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('+1000'),
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text('+5000'),
+                ),
+              ],
+            ),
+            Padding(padding: EdgeInsets.symmetric(vertical: 80),),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Text('Оплатить'),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
