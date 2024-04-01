@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:online_bank_monopoly/widgets/history_of_operation.dart';
 import 'package:online_bank_monopoly/widgets/pay_bank_to_user.dart';
-import 'package:online_bank_monopoly/widgets/pay_user_to_user_widget.dart';
 import 'package:online_bank_monopoly/widgets/your_balance.dart';
 
 class BankScreen extends StatelessWidget {
@@ -14,7 +13,7 @@ class BankScreen extends StatelessWidget {
         title: const Text('Банк',
         ),
       ),
-      body: Column(children: [
+      body: const Column(children: [
         YourBalance(),
         HistoryOfOperation(),
         PayBankToUserWidget(),

@@ -8,7 +8,7 @@ class HistoryOfOperation extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('История операций'),
+        const Text('История операций'),
         Container(
           width: 354,
           height: 230,

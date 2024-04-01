@@ -15,18 +15,18 @@ class PayDetails extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            YourBalance(),
-            Text('Кому:'),
-            Card(
+            const YourBalance(),
+            const Text('Кому:'),
+            const Card(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 155.0, vertical: 50.0),
+                padding: EdgeInsets.symmetric(horizontal: 155.0, vertical: 50.0),
                 child: Text('В банк'),
               ),
             ),
-            Padding(padding: EdgeInsets.symmetric(vertical: 70),),
-            TextField(
+            const Padding(padding: EdgeInsets.symmetric(vertical: 70),),
+            const TextField(
               decoration: InputDecoration(
-                enabledBorder: const OutlineInputBorder(
+                enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.white),
                 ),
                 focusedBorder: OutlineInputBorder(
@@ -44,27 +44,27 @@ class PayDetails extends StatelessWidget {
               children: [
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text('+100'),
+                  child: const Text('+100'),
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text('+500'),
+                  child: const Text('+500'),
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text('+1000'),
+                  child: const Text('+1000'),
                 ),
                 ElevatedButton(
                   onPressed: () {},
-                  child: Text('+5000'),
+                  child: const Text('+5000'),
                 ),
               ],
             ),
-            Padding(padding: EdgeInsets.symmetric(vertical: 80),),
+            const Padding(padding: EdgeInsets.symmetric(vertical: 80),),
             Center(
               child: ElevatedButton(
                 onPressed: () {},
-                child: Text('Оплатить'),
+                child: const Text('Оплатить'),
               ),
             ),
           ],
